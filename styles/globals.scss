@@ -1,0 +1,100 @@
+@import "./custom.scss";
+
+// iK? xx-small small phones (above 360px)
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+// #####################################################
+// x-Small devices (small phones, 320px and up)
+STARTING BREAKPOINT
+// #####################################################
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+// * to get react component full 100 width & height of the screen
+root,
+html,
+body,
+#root,
+#root > div#OuterGrid {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+// ! iK Beware I notice media query does not work accordingly unless your elements have higher specificity than < 576px. Not sure if this is a one off or not?
+// * However the other breakpoints are working fine with each other so you do not have to compete for specificity there
+
+// * breakpint of > 360px
+// @media screen and (min-width: 360px) {
+// } // breakpoint of > 360px
+
+// * breakpint of > 400px
+// @media screen and (min-width: 400px) {
+// } // breakpoint of > 400px
+
+// * breakpint of > 500px
+// @media screen and (min-width: 500px) {
+// } // breakpoint of > 500px
+
+// #####################################################
+// Small devices (landscape phones, 576px and up)
+// #####################################################
+// @include media-breakpoint-up(sm) {
+// }
+
+// * breakpint of > 576px
+// @media screen and (min-width: 576px) {
+// } // breakpoint of > 576px
+
+// #####################################################
+// Medium devices (tablets, 768px and up)
+// #####################################################
+// @include media-breakpoint-up(md) {
+// }
+
+// * breakpint of > 768px
+// @media screen and (min-width: 768px) {
+// } // breakpoint of > 768px
+
+// #####################################################
+// Large devices (desktops, 992px and up)
+// #####################################################
+// @include media-breakpoint-up(lg) {
+// }
+
+// * breakpint of > 992px
+// @media screen and (min-width: 992px) {
+// } // breakpoint of > 992px
+
+// #####################################################
+// X-Large devices (large desktops, 1200px and up)
+// #####################################################
+// @include media-breakpoint-up(xl) {
+// }
+
+// * breakpint of > 1200px
+// @media screen and (min-width: 1200px) {
+// } // breakpoint of > 1200px
+
+// #####################################################
+// XX-Large devices (larger desktops, 1400px and up)
+// #####################################################
+// @include media-breakpoint-up(xxl) {
+// }
+
+// * breakpint of > 1400px
+// @media screen and (min-width: 1400px) {
+// } // breakpoint of > 1400px
