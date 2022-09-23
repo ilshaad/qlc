@@ -8,7 +8,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <Container fluid>
+    <Container fluid className={`d-none d-md-block m-0 p-0`}>
       <nav>
         <ol>
           <li>iKarrow</li>
