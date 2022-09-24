@@ -1,0 +1,90 @@
+// * breakpint of > 400px
+.accordianBox {
+  // box-shadow: 0 3px 9px 16px #ddd;
+  // border-radius: 15px;
+
+  .accordianH {
+    position: relative;
+  }
+
+  .accordianHeader {
+    background-color: #5378eb;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .titleH {
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    // top: 23px;
+    // margin-left: 10px;
+  }
+
+  // title text
+  .titleText {
+    color: #08174d;
+    display: inline-block;
+    position: absolute;
+    top: -17px;
+    margin-left: 18px;
+    width: 160px;
+  }
+
+  .titleHclick {
+    color: white;
+  }
+
+  .minH {
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    // margin-left: 258px;
+    top: 22px;
+    right: 53px;
+  }
+
+  .closeArrow {
+    color: #08174d;
+    font-size: 3rem;
+    font-weight: 600;
+
+    // margin-left: 337px;
+
+    top: -11px;
+    right: 19px;
+    position: absolute;
+  }
+
+  .circle {
+    margin-left: 20px;
+    margin-top: 22px;
+    font-size: 5rem;
+    color: #e1e0ea;
+
+    line-height: 0;
+  }
+
+  // * breakpint of > 500px
+  // @media screen and (min-width: 500px) {
+  // } // breakpoint of > 500px
+
+  // * breakpint of > 576px
+  // @media screen and (min-width: 576px) {
+  // } // breakpoint of > 576px
+
+  // * breakpint of > 768px
+  // @media screen and (min-width: 768px) {
+  // } // breakpoint of > 768px
+
+  // * breakpint of > 992px
+  // @media screen and (min-width: 992px) {
+  // } // breakpoint of > 992px
+
+  // * breakpint of > 1200px
+  // @media screen and (min-width: 1200px) {
+  // } // breakpoint of > 1200px
+
+  // * breakpint of > 1400px
+  // @media screen and (min-width: 1400px) {
+  // } // breakpoint of > 1400px
+}

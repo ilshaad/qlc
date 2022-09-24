@@ -9,6 +9,9 @@ import { useEffect } from "react";
 import Header from "../components/Header";
 
 const Home: NextPage = () => {
+  const { container, blueBackground, mainAccordian, accordianUl, accordianLi } =
+    styles;
+
   useEffect(() => {
     console.log(accordianData);
   });
@@ -19,8 +22,12 @@ const Home: NextPage = () => {
 
     for (let item of accordianData) {
       li.push(
-        <li key={item.title}>
-          <AccordianBox title={item.title} bodyOptions={item.allOptions} />
+        <li key={item.title} className={`${accordianLi}`}>
+          <AccordianBox
+            title={item.title}
+            min={item.min}
+            bodyOptions={item.allOptions}
+          />
         </li>
       );
     }
@@ -29,7 +36,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={container}>
       <Head>
         <title>Queen&#39;s Lane Consultant</title>
         <meta name="description" content="QLC Frontend challenge" />
@@ -39,13 +46,14 @@ const Home: NextPage = () => {
       {/* breadcrumb nav header */}
       <Header />
 
+      {/* <div className={`${blueBackground}`}></div> */}
       {/* header for all responsive design*/}
       <AllHeader />
 
-      {/* main body */}
-      <main className={styles.main}>
+      {/* main body. accordian list */}
+      <main className={`${mainAccordian}`}>
         {/* accordian bock with list options */}
-        <ul>{accordianList()}</ul>
+        <ul className={`${accordianUl} m-0 p-0`}>{accordianList()}</ul>
       </main>
     </div>
   );

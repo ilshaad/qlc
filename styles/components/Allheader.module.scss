@@ -1,6 +1,195 @@
-header {
-  .blueBackground {
-    // ! todo
-    border-radius: 0 0 61% 38% / 0 0px 100% 29%;
+// * breakpoint from 400px to 575px
+
+.header {
+  height: 157px;
+  width: 100% !important;
+  padding: 1.25rem 0;
+  margin: 0;
+  color: white;
+  // position: relative;
+  // text-align: center;
+
+  // blue backbround
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    // left: -80px;
+    right: 0px;
+    background-color: #08174d;
+    border-radius: 31% 55% 48% 52% / 0% 0% 100% 21%;
+    width: 100vw;
+    height: 157px;
+    // color: white;
+    z-index: -1;
+  }
+
+  // .blueBackground {
+  //   border-radius: 31% 55% 48% 52% / 0% 0% 100% 21%;
+  //   // padding-top: 1.25rem;
+  // }
+
+  .juneHeading {
+    color: white;
+
+    // &::before {
+    //   content: url("../../public/leftArrow20x20.png");
+    //   display: inline;
+    //   // background-color: white;
+    //   width: 15px;
+    //   height: 15px;
+    //   // position: absolute;
+    //   // left: 0;
+    //   // top: 15px;
+    //   // color: red;
+    // }
+  }
+
+  .arrowBox {
+    // background-color: white;
+    // border-radius: 50%;
+    // padding: 1rem;
+    // font-size: 2.5rem;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    margin: 0 2rem 0 -3rem;
+
+    .arrow {
+      font-size: 1.7rem;
+      position: absolute;
+      left: 0;
+      transform: translate(25%, -10%);
+    }
+  }
+
+  .badgeOne {
+    background-color: rgba(58, 130, 247, 0.5);
+    // padding-left: 0.5rem;
+    // padding-right: 0.5rem;
+    // text-align: end;
+    display: inline-block;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  .badgeTwo {
+    background-color: rgba(255, 45, 45, 0.3);
+    // padding-left: 0.5rem;
+    // padding-right: 12px;
+    // text-align: end;
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .badgeP {
+    padding-left: 1.5rem;
+  }
+
+  // .badgePone {
+  //   width: 20px;
+  // }
+
+  // calendar image
+  .badgePone:before {
+    content: url("../../public/calendar15x15.png");
+    display: inline;
+    width: 15px;
+    height: 15px;
+    // max-width: max-content;
+    position: absolute;
+    left: 10px;
   }
 }
+
+// * breakpint of > 576px
+// @media screen and (min-width: 576px) {
+//   .blueBackground {
+//     width: 25%;
+//   }
+// } // breakpoint of > 576px
+
+// * breakpint of > 768px
+@media screen and (min-width: 768px) {
+  .header {
+    width: 40%;
+    padding-top: 1rem;
+
+    // blue background
+    &::before {
+      content: "";
+      position: absolute;
+      // display: inline-block;
+      top: 58px;
+      left: 0;
+      // right: 0px;
+      // background-color: #08174d;
+      // border-radius: 31% 55% 48% 52% / 0% 0% 100% 21%;
+      width: 51vw;
+      height: 175px;
+      // // color: white;
+      z-index: -1;
+    }
+
+    // height: 217px;
+
+    // .blueBackground {
+    //   width: 45%;
+    // }
+
+    // .badgeOne {
+    //   width: 236px;
+    // }
+
+    // .badgeTwo {
+    //   width: 236px;
+    // }
+
+    .step3 {
+      font-size: 0.7rem;
+      // padding-left: 0.5rem;
+      // padding-right: 7.6rem;
+    }
+  }
+} // breakpoint of > 768px
+
+// * breakpint of > 992px
+@media screen and (min-width: 992px) {
+  .header {
+    // blue background
+    &::before {
+      content: "";
+      position: absolute;
+      // display: inline-block;
+      top: 58px;
+      left: 0;
+      // right: 0px;
+      // background-color: #08174d;
+      // border-radius: 31% 55% 48% 52% / 0% 0% 100% 21%;
+      width: 41vw;
+      height: 175px;
+      // // color: white;
+      z-index: -1;
+    }
+
+    .step3 {
+      padding-right: 9.4rem;
+    }
+  }
+} // breakpoint of > 992px
+
+// * breakpint of > 1200px
+@media screen and (min-width: 1200px) {
+  .header {
+    .step3 {
+      padding-right: 11rem;
+    }
+  }
+} // breakpoint of > 1200px
+
+// * breakpint of > 1400px
+// @media screen and (min-width: 1400px) {
+// } // breakpoint of > 1400px
