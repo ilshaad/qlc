@@ -36,6 +36,11 @@ body,
   // text-align: center;
 }
 
+// // blue background colour when clicked
+// .accordianHeader {
+//   background-color: #5378eb;
+// }
+
 // ! iK Beware I notice media query does not work accordingly unless your elements have higher specificity than < 576px. Not sure if this is a one off or not?
 // * However the other breakpoints are working fine with each other so you do not have to compete for specificity there
 
