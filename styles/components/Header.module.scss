@@ -2,65 +2,30 @@
 .header {
   height: 55px;
   position: relative;
-  // padding-top: 19px;
   font-style: normal;
   font-weight: 400;
   display: flex;
   font-size: 0.9rem;
 
-  .headerRow {
-    // padding-top: 15px;
-  }
-
-  .arrowBoxParent {
-    // padding-top: 15px;
-    // margin-top: 15px;
-    // position: absolute;
-    // left: 0;
-    // top: 14px;
-  }
-
   .arrowBox {
     background: rgba(246, 252, 255, 1);
-
-    // border-radius: 50%;
-    // padding: 1rem;
-    // font-size: 2.5rem;
     width: 35px;
     height: 35px;
     display: inline-block;
-    // position: absolute;
-    // margin: 0 2rem 0 -3rem;
     border: rgba(0, 0, 0, 1);
-    // padding-top: -4px;
   }
 
   .arrow {
     font-size: 1.7rem;
     position: absolute;
-    // left: 0;
     transform: translate(25%, -10%);
-    // color: black;
     color: rgba(0, 0, 0, 1);
   }
-
-  // .qlcLogoS {
-  // position: absolute;
-  // right: 0;
-  // margin-right: 20px;
-  // }
-  // &::after {
-  //   content: url("../../public/qlcLogo.png");
-  //   display: inline-block;
-  //   width: 15px;
-  //   height: 15px;
-  // }
 
   .muteClaim,
   .greaterThan,
   .juneDate {
     margin: 0px 0px 0px 15px;
-    // background-color: red;
   }
 
   // * breakpint of > 500px

@@ -7,15 +7,7 @@
 // 2. Include any default variable overrides here
 $primary: #08174d;
 $secondary: #5378eb;
-
 $light-background: white;
-
-// $gradientBackground: linear-gradient(
-//   90deg,
-//   rgba(2, 0, 36, 1) 0%,
-//   rgba(0, 74, 173, 1) 54%,
-//   rgba(3, 176, 212, 1) 100%
-// );
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -44,7 +36,6 @@ $light-background: white;
 // @import "../node_modules/bootstrap/scss/nav";
 // @import "../node_modules/bootstrap/scss/navbar";
 // @import "../node_modules/bootstrap/scss/card";
-@import "../node_modules/bootstrap/scss/accordion";
 // @import "../node_modules/bootstrap/scss/breadcrumb";
 // @import "../node_modules/bootstrap/scss/pagination";
 // @import "../node_modules/bootstrap/scss/badge";

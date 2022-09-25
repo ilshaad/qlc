@@ -1,22 +1,18 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import AccordianBox from "../components/AccordianBox";
 import AllHeader from "../components/AllHeader";
-import styles from "../styles/pages/Home.module.scss";
-import { accordianData } from "../scripts/accordianData";
-import { useEffect } from "react";
 import Header from "../components/Header";
+import { accordianData } from "../scripts/accordianData";
+import styles from "../styles/pages/Home.module.scss";
 
 const Home: NextPage = () => {
   const {
     indexComponent,
     container,
-    blueBackground,
     mainAccordian,
     accordianUl,
     accordianLi,
-    backgroundLine,
     redCircleBackgroundParent,
     redCircleBackgroundChild,
     redCircleBackground,
@@ -24,10 +20,6 @@ const Home: NextPage = () => {
     blueCircleBackgroundChild,
     blueCircleBackground,
   } = styles;
-
-  useEffect(() => {
-    console.log(accordianData);
-  });
 
   // collect accoridan data & loops through to return list to display
   const accordianList = () => {
@@ -51,9 +43,6 @@ const Home: NextPage = () => {
   return (
     <div className={`${indexComponent}`}>
       <div className={container}>
-        {/* <div className={`${backgroundLine}`}>
-      </div> */}
-
         <Head>
           <title>Queen&#39;s Lane Consultant</title>
           <meta name="description" content="QLC Frontend challenge" />
@@ -63,7 +52,6 @@ const Home: NextPage = () => {
         {/* breadcrumb nav header */}
         <Header />
 
-        {/* <div className={`${blueBackground}`}></div> */}
         {/* header for all responsive design*/}
         <AllHeader />
 

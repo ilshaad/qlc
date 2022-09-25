@@ -2,8 +2,7 @@
 // basicall just show breadcrumb
 
 import Image from "next/image";
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import qlcLogo from "../public/qlcLogo.png";
 import style from "../styles/components/Header.module.scss";
 

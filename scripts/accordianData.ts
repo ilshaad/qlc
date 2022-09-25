@@ -6,7 +6,6 @@ type accordianDataType = { title: string; min: number; allOptions: string[] };
 
 // latest order same as index file
 // order date as descending (newest first)
-// iK ensure to change the order within the index file if you change the order here
 export const accordianData: accordianDataType[] = [
   // evidenceAccordian:
   {
