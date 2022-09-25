@@ -32,7 +32,9 @@ body,
   width: 100vw;
   margin: 0;
   padding: 0;
-  overflow: hidden !important;
+  // overflow: hidden !important;
+  overflow-y: auto;
+  overflow-x: hidden;
   // text-align: center;
 }
 

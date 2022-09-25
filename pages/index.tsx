@@ -9,8 +9,21 @@ import { useEffect } from "react";
 import Header from "../components/Header";
 
 const Home: NextPage = () => {
-  const { container, blueBackground, mainAccordian, accordianUl, accordianLi } =
-    styles;
+  const {
+    indexComponent,
+    container,
+    blueBackground,
+    mainAccordian,
+    accordianUl,
+    accordianLi,
+    backgroundLine,
+    redCircleBackgroundParent,
+    redCircleBackgroundChild,
+    redCircleBackground,
+    blueCircleBackgroundParent,
+    blueCircleBackgroundChild,
+    blueCircleBackground,
+  } = styles;
 
   useEffect(() => {
     console.log(accordianData);
@@ -36,25 +49,42 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className={container}>
-      <Head>
-        <title>Queen&#39;s Lane Consultant</title>
-        <meta name="description" content="QLC Frontend challenge" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className={`${indexComponent}`}>
+      <div className={container}>
+        {/* <div className={`${backgroundLine}`}>
+      </div> */}
 
-      {/* breadcrumb nav header */}
-      <Header />
+        <Head>
+          <title>Queen&#39;s Lane Consultant</title>
+          <meta name="description" content="QLC Frontend challenge" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      {/* <div className={`${blueBackground}`}></div> */}
-      {/* header for all responsive design*/}
-      <AllHeader />
+        {/* breadcrumb nav header */}
+        <Header />
 
-      {/* main body. accordian list */}
-      <main className={`${mainAccordian}`}>
-        {/* accordian bock with list options */}
-        <ul className={`${accordianUl} m-0 p-0`}>{accordianList()}</ul>
-      </main>
+        {/* <div className={`${blueBackground}`}></div> */}
+        {/* header for all responsive design*/}
+        <AllHeader />
+
+        {/* main body. accordian list */}
+        <main className={`${mainAccordian}`}>
+          {/* accordian bock with list options */}
+          <ul className={`${accordianUl} m-0 p-0`}>{accordianList()}</ul>
+        </main>
+      </div>
+
+      <div className={`${redCircleBackgroundParent}`}>
+        <div className={`${redCircleBackgroundChild}`}>
+          <div className={`${redCircleBackground}`}></div>
+        </div>
+      </div>
+
+      <div className={`${blueCircleBackgroundParent}`}>
+        <div className={`${blueCircleBackgroundChild}`}>
+          <div className={`${blueCircleBackground}`}></div>
+        </div>
+      </div>
     </div>
   );
 };
