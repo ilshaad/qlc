@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import styles from "../styles/components/AllHeader.module.scss";
+import styles from "../styles/components/AllHeaders.module.scss";
 import calendar from "../public/calendar.jpg";
 
 type Props = {};
