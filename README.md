@@ -8,6 +8,21 @@
 
 ##### Github: [ilshaad/qlc](https://github.com/ilshaad/qlc)
 
+## How to setup in your localhost?
+
+```bash
+# Install package first
+npm ci
+
+# Production mode
+npm run server
+
+#Developement mode
+npm run dev
+```
+
+After setup, go to `http://localhost:3000/` on your browser.
+
 ## What is the app about?
 
 Clone site from a Figma copy
